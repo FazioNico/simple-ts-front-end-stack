@@ -1,0 +1,20 @@
+{
+  "name": "simple-ts-front-end-stack",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "http://nicolasfazio.ch"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
