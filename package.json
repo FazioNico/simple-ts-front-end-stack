@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm install",
     "postinstall": "npm run bower",
-    "bower": "npm run gulp bower",
+    "bower": "gulp bower",
     "postbower": "npm run dev",
     "dev": "gulp",
     "prod": "gulp prod",
