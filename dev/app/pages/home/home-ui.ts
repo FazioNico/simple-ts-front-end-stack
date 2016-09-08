@@ -9,7 +9,7 @@
 export function homeSkeleton(data:any){
       // return page skeleton
       return  `
-        <section>
+        <section class="container">
           <h1>${data.pageTitle}</h1>
           <form>
             <p>

@@ -9,7 +9,7 @@
 export function userSkeleton(data:any){
       // return page skeleton
       return  `
-        <section>
+        <section class="container">
           <h1>${data.pageTitle} ${data.formData.email} !</h1>
         </section>
       `;
