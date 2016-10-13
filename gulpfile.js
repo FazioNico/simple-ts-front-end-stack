@@ -3,7 +3,7 @@
 * @Date:   06-09-2016
 * @Email:  contact@nicolasfazio.ch
 * @Last modified by:   webmaster-fazio
-* @Last modified time: 08-09-2016
+* @Last modified time: 14-10-2016
 */
 
 var gulp                = require("gulp"),
@@ -13,7 +13,7 @@ var gulp                = require("gulp"),
     tsify               = require("tsify"),
     gutil               = require("gulp-util"),
     uglify              = require('gulp-uglify'),
-    sourcemaps          = require('gulp-sourcemaps'),
+    //sourcemaps          = require('gulp-sourcemaps'),
     buffer              = require('vinyl-buffer'),
     bower               = require('gulp-bower'),
     concat              = require('gulp-concat'),
@@ -115,9 +115,9 @@ gulp.task("bundle-ts", function () {
       .bundle()
       .pipe(source('app.bundle.js'))
       .pipe(buffer())
-      .pipe(sourcemaps.init({loadMaps: true}))
-      .pipe(uglify())
-      .pipe(sourcemaps.write('./'))
+      //.pipe(sourcemaps.init({loadMaps: true}))
+      //.pipe(uglify())
+      //.pipe(sourcemaps.write('./'))
       .pipe(gulp.dest("dist/js"))
       .pipe(reload({stream:true}));
 });
